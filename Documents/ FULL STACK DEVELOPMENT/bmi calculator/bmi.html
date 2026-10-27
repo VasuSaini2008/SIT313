@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        
+      @theme {
+        --color-clifford: #da373d;
+        --color-mycolor:#2162A1;
+      }
+    </style>
+    <script src="bmi.js"></script>
+</head>
+
+<body class="bg-[#808080] min-h-screen flex items-center justify-center px-4 py-6">
+    <div id="cont" class="bg-[#FFFFFF] text-center p-5 sm:p-8 rounded-xl shadow-lg/50 w-full max-w-[450px] border border-gray-200">
+        <div class="flex justify-center mb-4">
+            <img
+                src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="BMI illustration"
+                class="w-full max-w-[300px] h-auto rounded-xl object-cover"
+            />
+        </div>
+        <div id="container" class="space-y-4">
+            <h1 class="text-mycolor font-bold text-lg sm:text-xl text-center pt-2 leading-relaxed">
+                Want to know your BMI? Please give us your information.
+            </h1>
+
+            <div class="space-y-4">
+                <div class="input-container">
+                    <p class="text-mycolor pt-2 text-center font-semibold">Please enter your weight:</p>
+                    <input class="border rounded p-2 text-center mt-2 w-full max-w-[280px] h-10 mx-auto block" type="number" placeholder="weight in (kg)" />
+                </div>
+
+                <div class="input-container">
+                    <p class="text-mycolor pt-2 text-center font-semibold">Please enter your height:</p>
+                    <input class="border rounded text-center mt-2 w-full max-w-[280px] h-10 p-3 mx-auto block" type="number" placeholder="height in (cm)" />
+                </div>
+            </div>
+
+            <div id="Submit" class="pt-2">
+                <button class="bg-sky-700 mt-3 hover:bg-fuchsia-500 bg-blue-500 rounded-full w-32 h-10 text-white font-semibold transition duration-200">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
