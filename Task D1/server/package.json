@@ -1,0 +1,20 @@
+{
+  "name": "sit313-d1-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-rate-limit": "latest",
+    "firebase-admin": "latest",
+    "helmet": "latest",
+    "jsonwebtoken": "latest"
+  }
+}
